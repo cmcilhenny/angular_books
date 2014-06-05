@@ -3,6 +3,9 @@ AngularBook::Application.routes.draw do
   root 'pages#index'
   resources :books, except: [:new, :edit]
 
+# need booksTemplates controller for the bellow to work
+  get 'books_templates/index', to: "books_templates#index"
+  get 'books_templates/show', to: 'books_templates#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
