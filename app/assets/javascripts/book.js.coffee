@@ -1,7 +1,9 @@
 BookApp = angular.module("BookApp", [
   "ngRoute",
   "ngResource",
-  "BookRouter"
+  "BookRouter",
+  "BookController",
+  "BookServices"
 ])
 
 BookApp.config(["$httpProvider", ($httpProvider)->

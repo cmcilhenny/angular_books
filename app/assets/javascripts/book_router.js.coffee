@@ -1,4 +1,6 @@
-BookApp.config(["$routeProvider", "$locationProvider", ($routeProvider, $locationProvider) -> 
+BookRouter = angular.module("BookRouter", [])
+
+BookRouter.config(["$routeProvider", "$locationProvider", ($routeProvider, $locationProvider) -> 
   $routeProvider
     .when("/books", {
       templateUrl: "/books_templates/index", 
